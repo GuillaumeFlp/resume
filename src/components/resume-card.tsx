@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -99,7 +101,9 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description}
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {description}
+              </ReactMarkdown>
             </motion.div>
           )}
         </div>
