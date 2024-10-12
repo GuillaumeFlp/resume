@@ -52,7 +52,7 @@ function HomePage() {
           <BlurFadeText
             className="prose max-w-full text-pretty font-sans text-md text-muted-foreground dark:prose-invert"
             delay={BLUR_FADE_DELAY * 4}
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            text="Diplômé d'une école d'ingénieur en 2020, je me suis spécialisé dans le développement web. C'est au cours de mes différentes expériences dans des domaines variés que j'ai pu acquérir des compétences techniques et humaines. J'aime travailler sur des projets variés et innovants. Je suis passionné par le développement web et les nouvelles technologies. Je suis toujours à la recherche de nouveaux défis et de nouvelles opportunités."
           />
         </section>
 
@@ -63,12 +63,25 @@ function HomePage() {
             </BlurFade>
             <div className="flex flex-wrap gap-1">
               {[
-                "React",
+                "HTML",
+                "CSS",
+                "JavaScript",
                 "Typescript",
-                "Node.js",
+                "Nodejs",
+                "React",
+                "Redux",
+                "Material-UI",
+                "Chakra-UI",
+                "Nestjs",
+                "REST",
+                "GraphQL",
+                "WebSockets",
+                "Jest",
+                "SQL",
                 "Postgres",
+                "Redis",
                 "Docker",
-                "TODO",
+                "Stripe",
               ].map((skill, id) => (
                 <BlurFade key={skill} delay={BLUR_FADE_DELAY * 5 + id * 0.05}>
                   <Badge key={skill}>{skill}</Badge>
@@ -93,7 +106,25 @@ function HomePage() {
                 title="Senior Software Engineer Full Stack"
                 subtitle="BAM Karaoke Box - Paris"
                 period="Mai 2023 - Aujourd'hui"
-                description="TODO"
+                description={`
+#### Refonte totale du back-office:
+* Gestion des réservations et des commandes
+* Gestion des prix, des promotions et codes promos
+* Création et gestion des produits et des catalogues
+* Gestions des salles des clients, des avoirs et des remboursements
+* Gestion des shifts 
+#### Refonte du logiciel du commande en salle:
+* Création d'un système de commande en salle
+* Gestion des promotions et happy hours
+* Envoie des commandes en temps réel au bar
+#### Refonte du site de réservation:
+* Affichage des salles disponibles
+* Tunnel de paiement
+* Page d'upsell et eshop
+* Espace client pour gérer ses réservations, créer des playlists...
+#### Support et résolution de bugs:
+* Application de karaoké, back-office, site de réservation...
+                `}
               />
             </BlurFade>
 
@@ -105,13 +136,13 @@ function HomePage() {
                 subtitle="Popchef - Paris"
                 period="Novembre 2022 - Mai 2023"
                 description={`
-- • Développement du back-office:
-    - • Création et gestion des menus afin de prévoir l'approvisionnement des frigos
-    - • Gestion de l'affichage (affichage promotionnel, menus, informations...) sur les écrans des frigos
-        - • Stack: React, Typescript, Node.js, GraphQL, PostgreSQL, MongoDB
-• Mise en place et écriture des tests unitaires et d'intégration avec Jest et Cypress
-• Support et résolution de bugs
-    - • Application client, back-office...
+#### Développement du back-office:
+* Création et gestion des menus afin de prévoir l'approvisionnement des frigos
+* Gestion de l'affichage (affichage promotionnel, menus, informations...) sur les écrans des frigos
+* Stack: React, Typescript, Node.js, GraphQL, PostgreSQL, MongoDB
+#### Mise en place et écriture des tests unitaires et d'intégration avec Jest et Cypress
+#### Support et résolution de bugs
+* Application client, back-office...
                 `}
               />
             </BlurFade>
@@ -124,17 +155,17 @@ function HomePage() {
                 subtitle="Thales SIX GTS France - Gennevilliers"
                 period="Septembre 2020 - Novembre 2022"
                 description={`
-- • Développement d'une application hybride (Web/Android) offrant des services avancés : Chat, Téléphonie, Cartographie
-    - • Stack: JavaScript, Node.js, Sqlite3
+#### Développement d'une application hybride (Web/Android) offrant des services avancés : Chat, Téléphonie, Cartographie
+* Stack: JavaScript, Node.js, Sqlite3
 
-- • Développement d'une application de monitoring pour la gestion et la supervision des différents services
-    - • Stack: React, Node.js, Typescript, PostgreSQL
+#### Développement d'une application de monitoring pour la gestion et la supervision des différents services
+* Stack: React, Node.js, Typescript, PostgreSQL
 
-- • Cadrage technique et fonctionnel des développements
-- • Écriture de de tests unitaires et d'intégration avec Jest et Robot Framework
-- • Mise en place d'une plateforme d'une plateforme d'intégration et déploiement continu
-    - • Jenkins, SonarQube, Docker
-- • Méthode agile Scrum et Kanban
+#### Cadrage technique et fonctionnel des développements
+#### Écriture de de tests unitaires et d'intégration avec Jest et Robot Framework
+#### Mise en place d'une plateforme d'une plateforme d'intégration et déploiement continu
+* Jenkins, SonarQube, Docker
+#### Méthode agile Scrum et Kanban
                 `}
               />
             </BlurFade>
@@ -147,17 +178,17 @@ function HomePage() {
                 subtitle="Thales SIX GTS France - Gennevilliers"
                 period="Septembre 2017 - Septembre 2020"
                 description={`
-- • Développement d'une application hybride (Web/Android) offrant des services avancés : Chat, Téléphonie, Cartographie
-    - • Stack: JavaScript, Node.js, Sqlite3
+#### Développement d'une application hybride (Web/Android) offrant des services avancés : Chat, Téléphonie, Cartographie
+* Stack: JavaScript, Node.js, Sqlite3
 
-- • Développement d'une application de monitoring pour la gestion et la supervision des différents services
-    - • Stack: React, Node.js, Typescript, PostgreSQL
+#### Développement d'une application de monitoring pour la gestion et la supervision des différents services
+* Stack: React, Node.js, Typescript, PostgreSQL
 
-- • Cadrage technique et fonctionnel des développements
-- • Écriture de de tests unitaires et d'intégration avec Jest et Robot Framework
-- • Mise en place d'une plateforme d'une plateforme d'intégration et déploiement continu
-    - • Jenkins, SonarQube, Docker
-- • Méthode agile Scrum et Kanban
+#### Cadrage technique et fonctionnel des développements
+#### Écriture de de tests unitaires et d'intégration avec Jest et Robot Framework
+#### Mise en place d'une plateforme d'une plateforme d'intégration et déploiement continu
+* Jenkins, SonarQube, Docker
+#### Méthode agile Scrum et Kanban
                `}
               />
             </BlurFade>
@@ -170,8 +201,8 @@ function HomePage() {
                 subtitle="Weiss Technik France - Eragny"
                 period="Avril 2017 – Juin 2017"
                 description={`
-- • Automatisation et programmation d'enceintes climatiques.
-- • Mise en service d'enceintes climatiques.
+#### Automatisation et programmation d'enceintes climatiques
+#### Mise en service d'enceintes climatiques
                 `}
               />
             </BlurFade>
@@ -192,17 +223,17 @@ function HomePage() {
                 subtitle="Formation ingénieur informatique"
                 period="Septembre 2017 – Septembre 2020"
                 description={`
-- • Enseignements:
-    - • Informatique : POO, BDD, IHM, Réseau, Développement
-    - • Sciences de l'ingénieur : Algorithmique, IA
-    - • Sciences humaines : Management, Gestion, Finance
+#### Enseignements:
+* Informatique : POO, BDD, IHM, Réseau, Développement
+* Sciences de l'ingénieur : Algorithmique, IA
+* Sciences humaines : Management, Gestion, Finance
 
-- • Rôle de producteur et de développeur dans la création d'un jeu vidéo 3D en coopération avec utilisation du 3dRudder (Unity)
+#### Rôle de producteur et de développeur dans la création d'un jeu vidéo 3D en coopération avec utilisation du 3dRudder (Unity)
 
-- • Projets:
-    - • Reconnaissance de véhicule (Python, openCV)
-    - • Gestion et prise de rendez-vous (Android)
-    - • Gestion d'une pizzeria. Prise de commande, gestion des stocks... (Java)
+#### Projets:
+* Reconnaissance de véhicule (Python, openCV)
+* Gestion et prise de rendez-vous (Android)
+* Gestion d'une pizzeria. Prise de commande, gestion des stocks... (Java)
               `}
               />
             </BlurFade>
@@ -215,8 +246,8 @@ function HomePage() {
                 subtitle="IUT Cergy-Pontoise - Neuville"
                 period="Septembre 2015 – Septembre 2017"
                 description={`
-* • Conception, fabrication et maintenance des systèmes électriques, énergétiques et automatisés
-* • Option : Automatismes industriels, Réseaux et Supervision
+#### Conception, fabrication et maintenance des systèmes électriques, énergétiques et automatisés
+#### Option : Automatismes industriels, Réseaux et Supervision
                 `}
               />
             </BlurFade>
@@ -229,8 +260,8 @@ function HomePage() {
                 subtitle="Lycée Charles de Gaulle - Poissy"
                 period="Septembre 2014 – Septembre 2015"
                 description={`
-* • Option: Énergie et Environnement
-* • Mention: Bien
+#### Option: Énergie et Environnement
+#### Mention: Bien
                 `}
               />
             </BlurFade>
@@ -275,7 +306,7 @@ function HomePage() {
                     "Docker",
                     "Stripe",
                   ]}
-                  image="https://placehold.co/1920x1080/black/white"
+                  image="/resume/images/runnify.jpg"
                   links={[
                     {
                       type: "Accès au site",
